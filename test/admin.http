@@ -1,0 +1,14 @@
+@Server=http://localhost:4004 
+
+@Service=/odata/v4/admin 
+
+####
+GET {{Server}}{{Service}}/MaintenanceItem
+
+####
+POST {{Server}}{{Service}}/MaintenanceItem
+Content-Type: application/json 
+
+{
+    "problemDescription":"testing the mic"
+}
